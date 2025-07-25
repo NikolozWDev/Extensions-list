@@ -1,31 +1,40 @@
-
+# Node.js dependency folder
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+
+# Lock file (optional, თუ არ გინდა იუმყიდრა)
 package-lock.json
+yarn.lock
 
-
+# Build / output directories
 dist/
 build/
 out/
 
-
+# Generated CSS by Tailwind/PostCSS
 src/styles/output.css
+# ან
+public/css/*.css
 
-
+# IDE settings
 .vscode/
+.idea/
 
-
+# OS artifacts
 .DS_Store
 Thumbs.db
 
-
+# Logs and temp
+npm-debug.log*
+yarn-debug.log*
 *.log
+*.tmp
 
-
+# Environment variables
 .env
 .env.*
 
-
+# Coverage reports (თუ ტესტები გაქვს)
 coverage/
+
+# Serialized debug builds or caches
+.cache/
