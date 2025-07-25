@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./public/**/*.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: 'class',
   theme: {
@@ -11,6 +11,7 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '1024px',
+      hp: '1200px',
       xl: '1280px',
       xxl: '1536px',
     },

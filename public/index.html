@@ -1,237 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="sun">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../src/styles/output.css">
     <title>Extensions</title>
+    <script src="../src/js/index.js" defer></script>
 </head>
 <body>
-<div class="w-full min-h-screen p-4">
+<div class="hp:flex hp:flex-row hp:justify-center">
+<div class="w-full min-h-screen p-4 hp:w-[1200px]">
 
-    <div class="w-[100%] p-[10px] flex flex-row justify-between items-center bg-dneu8 rounded-[10px]">
+    <div class="w-[100%] p-[10px] flex flex-row justify-between items-center shadow-md bg-white dark:bg-dneu8 rounded-[18px] sm:px-[15px] hp:mt-[20px]">
         <div class="flex flex-row gap-[5px] justify-center items-center">
             <img src="/src/assets/images/logo.svg">
         </div>
 
-        <div class="bg-dneu7 rounded-[10px] p-[15px] flex flex-row justify-center items-center">
-            <img src="/src/assets/images/icon-sun.svg">
+        <div id="mode" class="dark:bg-dneu7 bg-lneu4 rounded-[10px] p-[15px] flex flex-row justify-center items-center cursor-pointer hover:opacity-[0.7] transition-all
+        duration-[0.2s]">
+            <img id="dl-img" src="/src/assets/images/icon-moon.svg">
         </div>
     </div>
 
 
-    <div class="flex flex-col mt-[40px] justify-center items-center gap-[15px]">
-        <p class="text-[30px] text-white font-bold">Extensions List</p>
+    <div class="flex flex-col mt-[40px] justify-center items-center gap-[15px] sm:flex-row sm:justify-between sm:mt-[60px]">
+        <p class="text-[30px] dark:text-white font-bold">Extensions List</p>
         <div class="flex flex-row justify-center items-center gap-[10px]">
-            <div class="py-[8px] px-[18px] rounded-[20px] text-[18px] bg-dneu7 border-[1px] border-dneu6 text-white hover:bg-red-500 hover:text-black
-            transition-all duration-[0.2s] cursor-pointer">All</div>
-            <div class="py-[8px] px-[18px] rounded-[20px] text-[18px] bg-dneu7 border-[1px] border-dneu6 text-white hover:bg-red-500 hover:text-black
-            transition-all duration-[0.2s] cursor-pointer">Active</div>
-            <div class="py-[8px] px-[18px] rounded-[20px] text-[18px] bg-dneu7 border-[1px] border-dneu6 text-white hover:bg-red-500 hover:text-black
-            transition-all duration-[0.2s] cursor-pointer">Inactive</div>
+            <div class="py-[8px] px-[18px] rounded-[20px] text-[18px] bg-white dark:bg-dneu7 border-[1px] border-lneu5 dark:border-dneu6 text-black dark:text-white
+             hover:bg-red-500 hover:text-black dark:hover:bg-red-500 dark:hover:text-black transition-all duration-[0.2s] cursor-pointer shadow-sm">All</div>
+            <div class="py-[8px] px-[18px] rounded-[20px] text-[18px] bg-white dark:bg-dneu7 border-[1px] border-lneu5 dark:border-dneu6 text-black dark:text-white
+             hover:bg-red-500 hover:text-black dark:hover:bg-red-500 dark:hover:text-black transition-all duration-[0.2s] cursor-pointer shadow-sm">Active</div>
+            <div class="py-[8px] px-[18px] rounded-[20px] text-[18px] bg-white dark:bg-dneu7 border-[1px] border-lneu5 dark:border-dneu6 text-black dark:text-white
+             hover:bg-red-500 hover:text-black dark:hover:bg-red-500 dark:hover:text-black transition-all duration-[0.2s] cursor-pointer shadow-sm">Inactive</div>
         </div>
     </div>
 
 
-    <div class="mt-[30px] flex flex-col justify-center items-center gap-[14px]">
+    <div id="box-container" class="mt-[35px] flex flex-col justify-center items-center gap-[14px] sm:grid sm:grid-cols-2 lg:grid-cols-3">
         <!-- started data -->
-
-        <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-                <div class="flex flex-col gap-[20px] p-[18px] bg-dneu7 border-[1px] border-dneu6 rounded-[14px]">
-            <div class="flex flex-row justify-start items-start gap-[14px]">
-                <img src="/src/assets/images/logo-link-checker.svg">
-                <div class="flex flex-col justify-center items-start gap-[4px]">
-                    <p class="text-[20px] text-white font-bold">DevLens</p>
-                    <p class="text-[12xp] text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, libero?</p>
-                </div>
-            </div>
-
-            <div class="flex flex-row justify-between items-center">
-                <button class="bg-dneu7 border-[1px] border-dneu6 text-[14px] text-white rounded-[16px] py-[6px] px-[14px] tracking-[1.2px]
-                hover:opacity-[0.7] transition-all duration-[0.2s] cursor-pointer">View</button>
-                <div class="cursor-pointer w-[38px] h-[20px] bg-stone-600 rounded-[20px] border-[1px] border-stone-700
-                flex flex-row justify-start items-center"><div class="w-[16px] h-[16px] bg-white rounded-[50%]"></div></div>
-            </div>
-        </div>
-
+         <!-- genereting -->
         <!-- ended data -->
     </div>
 
+</div>
 </div>
 </body>
 </html>
