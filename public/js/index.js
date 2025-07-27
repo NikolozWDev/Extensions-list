@@ -46,7 +46,7 @@ function renderCards(displayedData, allData) {
         result += `
             <div class="all flex flex-col gap-[40px] p-[18px] bg-white dark:bg-dneu8 border-[1px] border-lneu3 dark:border-dneu7 rounded-[14px] shadow-sm">
                 <div class="flex flex-row justify-start items-start gap-[14px]">
-                    <img src="${item.logo}">
+                    <img src="${item.logo.slice(12)}">
                     <div class="flex flex-col justify-center items-start gap-[4px]">
                         <p class="text-[20px] dark:text-white font-bold">${item.name}</p>
                         <p class="text-[16px] h-[50px] dark:text-stone-400">${item.description}</p>
@@ -121,11 +121,11 @@ const initTheme = () => {
 
     const savedTheme = localStorage.getItem('theme')
     if(savedTheme == 'sun') {
-        dlImg.src = '/src/assets/images/icon-moon.svg'
+        dlImg.src = 'images/icon-moon.svg'
         htmlElement.classList.remove('dark')
         htmlElement.classList.add('sun')
     } else if(savedTheme == 'dark') {
-        dlImg.src = '/src/assets/images/icon-sun.svg'
+        dlImg.src = 'images/icon-sun.svg'
         htmlElement.classList.remove('sun')
         htmlElement.classList.add('dark')
     }
@@ -133,12 +133,12 @@ const initTheme = () => {
     
     dlMode.addEventListener('click', () => {
         if(dlImg.src.includes('sun') && htmlElement.classList.contains('dark')) {
-            dlImg.src = '/src/assets/images/icon-moon.svg'
+            dlImg.src = 'images/icon-moon.svg'
             htmlElement.classList.remove('dark')
             htmlElement.classList.add('sun')
             localStorage.setItem('theme', 'sun')
         } else if(dlImg.src.includes('moon') && htmlElement.classList.contains('sun')) {
-            dlImg.src = '/src/assets/images/icon-sun.svg'
+            dlImg.src = 'images/icon-sun.svg'
             htmlElement.classList.remove('sun')
             htmlElement.classList.add('dark')
             localStorage.setItem('theme', 'dark')
