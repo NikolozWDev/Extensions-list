@@ -6,7 +6,7 @@ package-lock.json
 yarn.lock
 
 # Tailwind/PostCSS generated CSS
-styles/output.css
+# styles/output.css
 
 # Build output (თუ გაწვდილი გაქვს)
 dist/
