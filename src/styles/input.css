@@ -22,4 +22,14 @@
     a {
         text-decoration: none;
     }
+    .cl-element {
+        transition: all 0.2s ease-in-out;
+    }
+    .actived {
+        justify-content: flex-end !important;
+        background-color: red !important;
+    }
+    .btn-actived {
+        @apply bg-red-500 text-black
+    }
 }
