@@ -4,7 +4,7 @@ const loadData = async () => {
     if(localData) {
         return JSON.parse(localData)
     } else {
-        const response = await fetch('./data/data.json');
+        const response = await fetch('data/data.json');
         const data = await response.json();
         return data;
     }
