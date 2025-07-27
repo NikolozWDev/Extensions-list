@@ -30,6 +30,10 @@
         background-color: red !important;
     }
     .btn-actived {
-        @apply bg-red-500 text-black
+        background-color: rgb(255, 51, 51) !important;
+        color: black !important;
+    }
+    .helper {
+        position: relative;
     }
 }
