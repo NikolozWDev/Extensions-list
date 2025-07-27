@@ -1,40 +1,38 @@
-# Node.js dependency folder
+# Node.js dependencies
 node_modules/
 
-# Lock file (optional, თუ არ გინდა იუმყიდრა)
+# Lock files (optional)
 package-lock.json
 yarn.lock
 
-# Build / output directories
+# Tailwind/PostCSS generated CSS
+styles/output.css
+
+# Build output (თუ გაწვდილი გაქვს)
 dist/
 build/
 out/
 
-# Generated CSS by Tailwind/PostCSS
-src/styles/output.css
-# ან
-public/css/*.css
-
-# IDE settings
+# IDE/editor settings
 .vscode/
 .idea/
 
-# OS artifacts
+# OS junk
 .DS_Store
 Thumbs.db
 
-# Logs and temp
+# Logs/temp files
 npm-debug.log*
 yarn-debug.log*
 *.log
 *.tmp
 
-# Environment variables
+# Env files (თუ გექნება მომავალში)
 .env
 .env.*
 
-# Coverage reports (თუ ტესტები გაქვს)
+# Jest/coverage (თუ გაწვდილი გაქვს ტესტები)
 coverage/
 
-# Serialized debug builds or caches
+# Caches
 .cache/
