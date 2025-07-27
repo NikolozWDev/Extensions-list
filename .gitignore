@@ -2,37 +2,37 @@
 node_modules/
 
 # Lock files (optional)
-package-lock.json
-yarn.lock
+# package-lock.json
+# yarn.lock
 
 # Tailwind/PostCSS generated CSS
 # styles/output.css
 
 # Build output (თუ გაწვდილი გაქვს)
-dist/
-build/
-out/
+# dist/
+# build/
+# out/
 
-# IDE/editor settings
-.vscode/
-.idea/
+# # IDE/editor settings
+# .vscode/
+# .idea/
 
-# OS junk
-.DS_Store
-Thumbs.db
+# # OS junk
+# .DS_Store
+# Thumbs.db
 
-# Logs/temp files
-npm-debug.log*
-yarn-debug.log*
-*.log
-*.tmp
+# # Logs/temp files
+# npm-debug.log*
+# yarn-debug.log*
+# *.log
+# *.tmp
 
-# Env files (თუ გექნება მომავალში)
-.env
-.env.*
+# # Env files (თუ გექნება მომავალში)
+# .env
+# .env.*
 
-# Jest/coverage (თუ გაწვდილი გაქვს ტესტები)
-coverage/
+# # Jest/coverage (თუ გაწვდილი გაქვს ტესტები)
+# coverage/
 
-# Caches
-.cache/
+# # Caches
+# .cache/
